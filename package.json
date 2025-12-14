@@ -12,6 +12,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "smtp-server": "^3.13.0"
+    "smtp-server": "^3.17.0"
   }
 }

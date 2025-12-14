@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   smtp-server:
-    specifier: ^3.13.0
-    version: 3.13.0
+    specifier: ^3.17.1
+    version: 3.17.1
 
 packages:
 
@@ -20,16 +20,22 @@ packages:
     resolution: {integrity: sha512-Bm6H79i01DjgGTCWjUuCjJ6QDo1HB96PT/xCYuyJUP9WFbVDrLSbG4EZCvOCun2rNswZb0c3e4Jt/ws795esHA==}
     dev: false
 
-  /nodemailer@6.9.4:
-    resolution: {integrity: sha512-CXjQvrQZV4+6X5wP6ZIgdehJamI63MFoYFGGPtHudWym9qaEHDNdPzaj5bfMCvxG1vhAileSWW90q7nL0N36mA==}
+  /nodemailer@7.0.11:
+    resolution: {integrity: sha512-gnXhNRE0FNhD7wPSCGhdNh46Hs6nm+uTyg+Kq0cZukNQiYdnCsoQjodNP9BQVG9XrcK/v6/MgpAPBUFyzh9pvw==}
     engines: {node: '>=6.0.0'}
     dev: false
 
-  /smtp-server@3.13.0:
-    resolution: {integrity: sha512-thVFqpwrHIJ25rXjXA6RYFUO35el2O+X7WJ006qMVAyFs5Ss6XGPJASg7Fh1QvT28ADIv9hGGXmgR+kaSEikwQ==}
-    engines: {node: '>=12.0.0'}
+  /punycode.js@2.3.1:
+    resolution: {integrity: sha512-uxFIHU0YlHYhDQtV4R9J6a52SLx28BCjT+4ieh7IGbgwVJWO+km431c4yRlREUAsAmt/uMjQUyQHNEPf0M39CA==}
+    engines: {node: '>=6'}
+    dev: false
+
+  /smtp-server@3.17.1:
+    resolution: {integrity: sha512-CpJCgTq8eKuzlHf8qhU3eL7PUtoQkNa8wF4fimAiHKQZbEH5vltE9e2jHroDykUp22ypi4bJvsMf/2a0Twpn1Q==}
+    engines: {node: '>=18.18.0'}
     dependencies:
       base32.js: 0.1.0
       ipv6-normalize: 1.0.1
-      nodemailer: 6.9.4
+      nodemailer: 7.0.11
+      punycode.js: 2.3.1
     dev: false
